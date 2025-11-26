@@ -1,107 +1,159 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-white">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edward Chan — Backend Resume</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <style>
-      html {
-        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      }
-    </style>
-  </head>
-  <body class="text-slate-900 leading-relaxed">
-    <main class="max-w-3xl mx-auto px-6 py-8 space-y-8 print:px-0 print:py-6">
-      <header class="space-y-3 border-b border-slate-200 pb-4">
-        <div class="flex flex-wrap items-baseline gap-x-4 gap-y-2">
-          <h1 class="text-3xl font-semibold tracking-tight text-[#213a7a]">Edward Chan</h1>
-          <span class="text-sm text-slate-500">Raleigh, NC • Remote</span>
-        </div>
-        <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-600">
-          <a class="hover:text-indigo-600" href="tel:+1-828-772-5331">+1-828-772-5331</a>
-          <span>•</span>
-          <a class="hover:text-indigo-600" href="mailto:schan3edd@gmail.com">schan3edd@gmail.com</a>
-          <span>•</span>
-          <a class="hover:text-indigo-600" href="https://linkedin.com/in/schan3ed" target="_blank" rel="noopener noreferrer">linkedin.com/in/schan3ed</a>
-        </div>
-      </header>
 
-      <section class="space-y-4">
-        <h2 class="text-lg font-semibold tracking-tight text-[#213a7a] uppercase">Experience</h2>
-        <div class="space-y-4">
-          <article class="space-y-2">
-            <div class="flex flex-wrap items-start justify-between gap-y-1 text-sm text-slate-600">
-              <div>
-                <p class="font-semibold text-slate-900">Founding Engineer · Squads</p>
-                <p class="uppercase tracking-wide text-xs text-slate-500">web3 treasury automation • VC-backed</p>
-              </div>
-              <p class="text-xs font-semibold text-slate-500">May 2024 – Present</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edward Chan — Backend Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="text-slate-900 leading-relaxed">
+  <main class="max-w-3xl mx-auto px-6 py-5 space-y-4 print:px-0 print:py-4">
+    <header class="space-y-2 border-b border-slate-200 pb-2">
+      <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+        <h1 class="text-2xl font-semibold tracking-tight text-[#213a7a]">Edward Chan</h1>
+        <span class="text-[15px] text-slate-500">Raleigh, North Carolina / Remote</span>
+      </div>
+      <div class="flex flex-wrap gap-x-3 gap-y-0.5 text-[13px] text-slate-600">
+        <a class="hover:text-indigo-600" href="tel:+1-828-772-5331">+1-828-772-5331</a>
+        <span>•</span>
+        <a class="hover:text-indigo-600" href="mailto:schan3edd@gmail.com">schan3edd@gmail.com</a>
+        <span>•</span>
+        <a class="hover:text-indigo-600" href="https://linkedin.com/in/schan3ed" target="_blank"
+          rel="noopener noreferrer">linkedin.com/in/schan3ed</a>
+      </div>
+    </header>
+
+    <section class="space-y-2">
+      <h2 class="text-[17px] font-semibold tracking-tight text-[#213a7a] uppercase">Experience</h2>
+      <div class="space-y-3">
+        <article class="space-y-0.5">
+          <div class="flex flex-wrap items-start justify-between gap-y-0.5 text-[15px] text-slate-600">
+            <div>
+              <p class="font-semibold text-slate-900">Founding Engineer · Squads</p>
+              <p class="uppercase tracking-wide text-[11px] text-slate-500">web3 treasury automation • VC-backed</p>
             </div>
-            <p class="text-xs uppercase tracking-wide text-slate-500">Stack: <span class="normal-case text-slate-600">Rust, Tonic gRPC, Temporal, Solana, Envoy, Tilt, SQLx, PostgreSQL, Redis, AWS, ECS, OpenTelemetry</span></p>
-            <ul class="list-disc pl-5 text-sm leading-snug text-slate-700 space-y-1">
-              <li>Architected a 12+ service Rust/Tonic platform fronted by Envoy and orchestrated via Tilt so Solana treasury workflows, Temporal jobs, and relayer workers run from a single repo-driven stack.</li>
-              <li>Safeguarded $2B of $7B USDC deposits while shipping every surface—multi-sig/member management, passkey auth, intents/approvals, inflow/outflow reporting, KYC bridge, webhooks, SSE streaming—and shared crates for logging, Solana/Jito utilities, AWS SSM/SES/S3, Redis, and SQLx migrations.</li>
-            </ul>
-          </article>
+            <p class="text-[11px] font-semibold text-slate-500">May 2024 – Present</p>
+          </div>
+          <p class="text-[11px] uppercase tracking-wide text-slate-500">Stack: <span
+              class="normal-case text-slate-600">Rust, Tonic gRPC, Temporal, Solana, Envoy, Tilt, SQLx, PostgreSQL,
+              Redis, AWS, ECS, OpenTelemetry</span></p>
+          <ul class="list-disc pl-4 text-[13px] leading-normal text-slate-700">
+            <li>Architected a 12+ service Rust/Tonic platform fronted by Envoy and orchestrated via Tilt, unifying
+              Solana treasury workflows, Temporal jobs, and relayer workers into a single repo-driven stack.</li>
+            <li>Safeguarded $2B of $7B USDC deposits while shipping critical surfaces including multi-sig/member
+              management, passkey auth, intents/approvals, inflow/outflow reporting, and KYC bridge.</li>
+            <li>Developed shared crates for logging, Solana/Jito utilities, AWS SSM/SES/S3, Redis, and SQLx migrations
+              to standardize infrastructure across the platform.</li>
+          </ul>
+        </article>
 
-          <article class="space-y-2">
-            <div class="flex flex-wrap items-start justify-between gap-y-1 text-sm text-slate-600">
-              <div>
-                <p class="font-semibold text-slate-900">Senior Software Engineer · Fractal</p>
-                <p class="uppercase tracking-wide text-xs text-slate-500">web3 gaming • $35M seed</p>
-              </div>
-              <p class="text-xs font-semibold text-slate-500">May 2022 – Jul 2023</p>
+        <article class="space-y-0.5">
+          <div class="flex flex-wrap items-start justify-between gap-y-0.5 text-[15px] text-slate-600">
+            <div>
+              <p class="font-semibold text-slate-900">Lead Software Engineer · Fractal</p>
+              <p class="uppercase tracking-wide text-[11px] text-slate-500">web3 gaming • $35M seed</p>
             </div>
-            <p class="text-xs uppercase tracking-wide text-slate-500">Stack: <span class="normal-case text-slate-600">Golang, Web3, Ethereum, Polygon, GCP, Spanner, Microservices</span></p>
-            <ul class="list-disc pl-5 text-sm leading-snug text-slate-700 space-y-1">
-              <li>Launched marketplace, wallet, and SDK suites across Ethereum and Polygon in under four months by owning microservice design end to end.</li>
-              <li>Operated Golang services on GCP sustaining &gt;1000 QPS and iterated with design and top studios to double SDK adoption.</li>
-            </ul>
-          </article>
+            <p class="text-[11px] font-semibold text-slate-500">May 2022 – May 2023</p>
+          </div>
+          <p class="text-[11px] uppercase tracking-wide text-slate-500">Stack: <span
+              class="normal-case text-slate-600">Golang, Web3, Ethereum, Polygon, GCP, Spanner, Microservices</span></p>
+          <ul class="list-disc pl-4 text-[13px] leading-normal text-slate-700">
+            <li>Launched marketplace, wallet, and SDK suites across Ethereum and Polygon in under four months by owning
+              microservice design end-to-end.</li>
+            <li>Operated Golang services on GCP sustaining 1000+ QPS, ensuring high availability and low latency for
+              gaming workloads.</li>
+            <li>Iterated with design and top studios to double SDK adoption through developer-focused improvements.</li>
+          </ul>
+        </article>
 
-          <article class="space-y-2">
-            <div class="flex flex-wrap items-start justify-between gap-y-1 text-sm text-slate-600">
-              <div>
-                <p class="font-semibold text-slate-900">Lead Software Engineer · Fast</p>
-                <p class="uppercase tracking-wide text-xs text-slate-500">e-commerce • $125M Series B</p>
-              </div>
-              <p class="text-xs font-semibold text-slate-500">May 2021 – May 2022</p>
+        <article class="space-y-0.5">
+          <div class="flex flex-wrap items-start justify-between gap-y-0.5 text-[15px] text-slate-600">
+            <div>
+              <p class="font-semibold text-slate-900">Lead Software Engineer · Fast</p>
+              <p class="uppercase tracking-wide text-[11px] text-slate-500">e-commerce • $125M Series B</p>
             </div>
-            <p class="text-xs uppercase tracking-wide text-slate-500">Stack: <span class="normal-case text-slate-600">Golang, AWS, Step Functions, DynamoDB, Checkout, Fraud</span></p>
-            <ul class="list-disc pl-5 text-sm leading-snug text-slate-700 space-y-1">
-              <li>Led a five-engineer fraud pod and architected a Step Functions/DynamoDB checkout that processed $100M+ in sales with idempotent payments and real-time decisioning.</li>
-            </ul>
-          </article>
+            <p class="text-[11px] font-semibold text-slate-500">May 2021 – May 2022</p>
+          </div>
+          <p class="text-[11px] uppercase tracking-wide text-slate-500">Stack: <span
+              class="normal-case text-slate-600">Golang, AWS, Step Functions, DynamoDB, Checkout, Fraud
+              Prevention</span></p>
+          <ul class="list-disc pl-4 text-[13px] leading-normal text-slate-700">
+            <li>Led a five-engineer fraud pod and architected a Step Functions/DynamoDB checkout that processed $100M+
+              in sales.</li>
+            <li>Implemented idempotent payments and real-time decisioning to prevent fraud while maintaining a seamless
+              user experience.</li>
+          </ul>
+        </article>
 
-          <article class="space-y-2">
-            <div class="flex flex-wrap items-start justify-between gap-y-1 text-sm text-slate-600">
-              <div>
-                <p class="font-semibold text-slate-900">Software Engineer · Pendo</p>
-                <p class="uppercase tracking-wide text-xs text-slate-500">analytics • $470M secondary</p>
-              </div>
-              <p class="text-xs font-semibold text-slate-500">Aug 2018 – May 2021</p>
+        <article class="space-y-0.5">
+          <div class="flex flex-wrap items-start justify-between gap-y-0.5 text-[15px] text-slate-600">
+            <div>
+              <p class="font-semibold text-slate-900">Software Engineer · Pendo</p>
+              <p class="uppercase tracking-wide text-[11px] text-slate-500">analytics • $470M secondary</p>
             </div>
-            <p class="text-xs uppercase tracking-wide text-slate-500">Stack: <span class="normal-case text-slate-600">Golang, GCP, Product analytics, Walkthroughs, Internationalization, OAuth</span></p>
-            <ul class="list-disc pl-5 text-sm leading-snug text-slate-700 space-y-1">
-              <li>Delivered walkthrough, internationalization, and OAuth features plus coordinated onboarding across products to unlock enterprise deployments.</li>
-            </ul>
-          </article>
+            <p class="text-[11px] font-semibold text-slate-500">Aug 2018 – May 2021</p>
+          </div>
+          <p class="text-[11px] uppercase tracking-wide text-slate-500">Stack: <span
+              class="normal-case text-slate-600">Golang, GCP, Product Analytics, Walkthroughs, Internationalization,
+              OAuth</span></p>
+          <ul class="list-disc pl-4 text-[13px] leading-normal text-slate-700">
+            <li>Delivered walkthrough, internationalization, and OAuth features.</li>
+            <li>Coordinated onboarding across products to unlock enterprise deployments.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-[17px] font-semibold tracking-tight text-[#213a7a] uppercase">Skills</h2>
+      <div class="text-[13px] text-slate-700 space-y-0.5">
+        <p><span class="font-semibold text-slate-900">Languages & Backend:</span> Golang (7 yrs), Rust (2 yrs), Python,
+          Tonic gRPC, Protocol Buffers, SQLx, Temporal, Microservices</p>
+        <p><span class="font-semibold text-slate-900">Infrastructure & Cloud:</span> AWS, GCP, Terraform, CI/CD, Envoy,
+          Tilt, Docker Compose, ECS, OpenTelemetry</p>
+        <p><span class="font-semibold text-slate-900">Data & Integrations:</span> PostgreSQL, Redis, Solana SDK, AWS
+          SSM/SES/S3, Redis/SSE streaming</p>
+
+      </div>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-[17px] font-semibold tracking-tight text-[#213a7a] uppercase">Education</h2>
+      <div class="space-y-1 text-[13px] text-slate-700">
+        <div class="flex justify-between items-baseline">
+          <div>
+            <p class="font-semibold text-slate-900">Georgia Institute of Technology</p>
+            <p>M.S. Computer Science</p>
+          </div>
+          <div class="text-right text-slate-500 text-[11px]">
+            <p>Atlanta, Georgia</p>
+            <p>Dec 2020</p>
+          </div>
         </div>
-      </section>
-
-      <section class="space-y-3">
-        <h2 class="text-lg font-semibold tracking-tight text-[#213a7a] uppercase">Education</h2>
-        <div class="text-sm text-slate-700 space-y-2">
-          <p><span class="font-semibold text-slate-900">Georgia Institute of Technology</span> — M.S. Computer Science</p>
-          <p><span class="font-semibold text-slate-900">North Carolina State University</span> — B.S. Computer Science</p>
-          <p><span class="font-semibold text-slate-900">North Carolina State University</span> — B.A. Physics</p>
+        <div class="flex justify-between items-baseline">
+          <div>
+            <p class="font-semibold text-slate-900">North Carolina State University</p>
+            <p>B.S. Computer Science, B.A. Physics</p>
+          </div>
+          <div class="text-right text-slate-500 text-[11px]">
+            <p>Raleigh, North Carolina</p>
+            <p>May 2018</p>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>

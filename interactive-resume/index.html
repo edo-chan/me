@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward Chan - Interactive Resume</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body
+    class="bg-gradient-to-br from-purple-600 via-blue-500 to-pink-500 h-screen w-screen overflow-hidden flex justify-center items-center font-system transition-all duration-1000"
+    id="body-bg">
+
+    <!-- Main Container (Phone -> Journal) -->
+    <div id="main-container"
+        class="relative w-full h-full md:w-[400px] md:h-[850px] bg-black/20 backdrop-blur-3xl md:rounded-[3.5rem] shadow-2xl border-8 border-white/10 ring-1 ring-white/20 transition-all duration-1000 ease-in-out overflow-hidden">
+
+        <!-- Lock Screen / Incoming Call -->
+        <div id="lock-screen"
+            class="absolute inset-0 w-full h-full z-40 transition-all duration-1000 ease-in-out flex flex-col justify-between pb-12 text-white">
+
+            <!-- Status Bar -->
+            <div class="px-8 py-5 flex justify-between items-center text-sm font-medium">
+                <div id="status-time">9:41</div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-signal"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-battery-full"></i>
+                </div>
+            </div>
+
+            <!-- Caller Info -->
+            <div class="flex flex-col items-center mt-10 space-y-6">
+                <div
+                    class="w-32 h-32 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center overflow-hidden border border-white/20 shadow-2xl">
+                    <i class="fa-solid fa-user text-5xl text-white/80"></i>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-4xl font-semibold tracking-tight drop-shadow-lg">Edward Chan</h2>
+                    <p class="text-xl text-white/80 mt-2 font-medium drop-shadow-md">is calling...</p>
+                </div>
+            </div>
+
+            <!-- Swipe to Answer -->
+            <div class="flex flex-col items-center gap-8 mb-16">
+                <div class="w-full px-10">
+                    <div id="slider-container"
+                        class="relative w-full h-20 bg-white/10 backdrop-blur-xl rounded-full flex items-center px-2 cursor-pointer ring-1 ring-white/20 shadow-lg">
+                        <div id="slider-text"
+                            class="absolute w-full text-center text-lg font-medium tracking-wide opacity-90 pointer-events-none text-white drop-shadow-sm animate-pulse">
+                            slide to answer</div>
+                        <div id="slider-thumb"
+                            class="w-16 h-16 bg-green-500 rounded-full shadow-xl flex items-center justify-center relative z-10 touch-none transition-transform">
+                            <i class="fa-solid fa-phone text-white text-2xl animate-bounce"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Journal View (Hidden initially, revealed on morph) -->
+        <div id="journal-view"
+            class="absolute inset-0 w-full h-full bg-[#fdfbf7] z-30 opacity-0 transition-opacity duration-1000 delay-300 bg-paper text-gray-800 font-handwriting flex flex-col">
+
+            <!-- Header -->
+            <div
+                class="sticky top-0 z-50 bg-[#fdfbf7]/95 backdrop-blur-sm border-b border-gray-300 p-6 flex justify-between items-center shadow-sm">
+                <h1 class="text-3xl font-bold text-gray-900">My Journal</h1>
+                <button onclick="lockPhone()"
+                    class="text-gray-500 hover:text-gray-800 transition-colors p-2 rounded-full hover:bg-gray-200">
+                    <i class="fa-solid fa-lock text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Two-Column Layout -->
+            <div class="flex-1 overflow-hidden flex flex-col md:flex-row">
+
+                <!-- Left Page (Profile & Skills) -->
+                <div class="flex-1 p-8 overflow-y-auto border-r border-gray-300/50 custom-scrollbar no-scrollbar">
+                    <section class="space-y-6 mb-10">
+                        <div class="relative inline-block">
+                            <h2 class="text-5xl font-bold text-indigo-900 mb-2">Edward Chan</h2>
+                            <div class="h-1 w-full bg-indigo-300 rounded-full"></div>
+                        </div>
+                        <p class="text-2xl text-gray-600">Backend Engineer | Rust & Go</p>
+
+                        <div class="flex gap-6 text-3xl mt-4">
+                            <a href="https://linkedin.com/in/schan3ed" target="_blank"
+                                class="text-blue-600 hover:scale-110 transition-transform hover:rotate-3"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="mailto:schan3edd@gmail.com"
+                                class="text-red-500 hover:scale-110 transition-transform hover:-rotate-3"><i
+                                    class="fa-solid fa-envelope"></i></a>
+                            <a href="tel:+1-828-772-5331"
+                                class="text-green-600 hover:scale-110 transition-transform hover:rotate-3"><i
+                                    class="fa-solid fa-phone"></i></a>
+                        </div>
+                    </section>
+
+                    <section class="mb-8">
+                        <h3 class="text-3xl font-bold mb-6 text-gray-800 border-b border-gray-300 pb-2 inline-block"><i
+                                class="fa-solid fa-wrench mr-3 text-indigo-500"></i>Skills</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span
+                                class="px-4 py-2 bg-yellow-100 border-2 border-yellow-200 rounded-lg transform -rotate-1 shadow-sm hover:rotate-0 transition-transform">Golang</span>
+                            <span
+                                class="px-4 py-2 bg-orange-100 border-2 border-orange-200 rounded-lg transform rotate-2 shadow-sm hover:rotate-0 transition-transform">Rust</span>
+                            <span
+                                class="px-4 py-2 bg-blue-100 border-2 border-blue-200 rounded-lg transform -rotate-2 shadow-sm hover:rotate-0 transition-transform">AWS</span>
+                            <span
+                                class="px-4 py-2 bg-green-100 border-2 border-green-200 rounded-lg transform rotate-1 shadow-sm hover:rotate-0 transition-transform">GCP</span>
+                            <span
+                                class="px-4 py-2 bg-purple-100 border-2 border-purple-200 rounded-lg transform -rotate-1 shadow-sm hover:rotate-0 transition-transform">PostgreSQL</span>
+                            <span
+                                class="px-4 py-2 bg-red-100 border-2 border-red-200 rounded-lg transform rotate-2 shadow-sm hover:rotate-0 transition-transform">Redis</span>
+                            <span
+                                class="px-4 py-2 bg-teal-100 border-2 border-teal-200 rounded-lg transform -rotate-1 shadow-sm hover:rotate-0 transition-transform">Temporal</span>
+                            <span
+                                class="px-4 py-2 bg-indigo-100 border-2 border-indigo-200 rounded-lg transform rotate-1 shadow-sm hover:rotate-0 transition-transform">Tonic</span>
+                            <span
+                                class="px-4 py-2 bg-pink-100 border-2 border-pink-200 rounded-lg transform -rotate-2 shadow-sm hover:rotate-0 transition-transform">Solana</span>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="text-3xl font-bold mb-6 text-gray-800 border-b border-gray-300 pb-2 inline-block"><i
+                                class="fa-solid fa-graduation-cap mr-3 text-indigo-500"></i>Education</h3>
+                        <div class="space-y-4 text-lg">
+                            <div class="bg-white/50 p-4 rounded-xl border border-gray-200 shadow-sm">
+                                <p class="font-bold text-gray-900">Georgia Tech</p>
+                                <p class="text-gray-600">M.S. Computer Science</p>
+                            </div>
+                            <div class="bg-white/50 p-4 rounded-xl border border-gray-200 shadow-sm">
+                                <p class="font-bold text-gray-900">NC State</p>
+                                <p class="text-gray-600">B.S. CS & B.A. Physics</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Page (Experience) -->
+                <div class="flex-1 p-8 overflow-y-auto custom-scrollbar no-scrollbar bg-paper-pattern">
+                    <h3 class="text-3xl font-bold mb-8 text-gray-800 border-b border-gray-300 pb-2 inline-block"><i
+                            class="fa-solid fa-briefcase mr-3 text-indigo-500"></i>Experience</h3>
+
+                    <div class="space-y-10 border-l-4 border-indigo-200 pl-6 ml-2">
+                        <!-- Squads -->
+                        <div class="relative group">
+                            <div
+                                class="absolute -left-[33px] top-2 w-5 h-5 bg-indigo-500 rounded-full border-4 border-[#fdfbf7] group-hover:scale-125 transition-transform">
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">Founding Engineer @ Squads</h4>
+                            <p class="text-base text-gray-500 font-system mb-2">May 2024 - Present</p>
+                            <p class="text-lg text-indigo-600 font-bold mb-3">Web3 Treasury Automation</p>
+                            <ul
+                                class="list-disc list-inside space-y-2 text-lg leading-relaxed text-gray-700 marker:text-indigo-400">
+                                <li>Architected 12+ service Rust/Tonic platform.</li>
+                                <li>Safeguarded $2B+ USDC deposits.</li>
+                                <li>Tech: Rust, Tonic, Temporal, Solana, AWS.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Fractal -->
+                        <div class="relative group">
+                            <div
+                                class="absolute -left-[33px] top-2 w-5 h-5 bg-gray-400 rounded-full border-4 border-[#fdfbf7] group-hover:scale-125 transition-transform">
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">Lead Software Engineer @ Fractal</h4>
+                            <p class="text-base text-gray-500 font-system mb-2">May 2022 - May 2023</p>
+                            <ul
+                                class="list-disc list-inside space-y-2 text-lg leading-relaxed text-gray-700 marker:text-gray-400">
+                                <li>Launched marketplace & wallet on Eth/Polygon.</li>
+                                <li>Scaled Golang services to 1000+ QPS.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Fast -->
+                        <div class="relative group">
+                            <div
+                                class="absolute -left-[33px] top-2 w-5 h-5 bg-gray-400 rounded-full border-4 border-[#fdfbf7] group-hover:scale-125 transition-transform">
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">Lead SE @ Fast</h4>
+                            <p class="text-base text-gray-500 font-system mb-2">May 2021 - May 2022</p>
+                            <ul
+                                class="list-disc list-inside space-y-2 text-lg leading-relaxed text-gray-700 marker:text-gray-400">
+                                <li>Led fraud pod, processed $100M+ sales.</li>
+                                <li>Tech: Golang, AWS, DynamoDB.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Pendo -->
+                        <div class="relative group">
+                            <div
+                                class="absolute -left-[33px] top-2 w-5 h-5 bg-gray-400 rounded-full border-4 border-[#fdfbf7] group-hover:scale-125 transition-transform">
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900">Software Engineer @ Pendo</h4>
+                            <p class="text-base text-gray-500 font-system mb-2">Aug 2018 - May 2021</p>
+                            <ul
+                                class="list-disc list-inside space-y-2 text-lg leading-relaxed text-gray-700 marker:text-gray-400">
+                                <li>Delivered walkthrough & OAuth features.</li>
+                                <li>Tech: Golang, GCP, Analytics.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

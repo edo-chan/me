@@ -13,18 +13,20 @@ work_experience:
     end_date: present
     technologies: [Rust, Tonic, gRPC, Temporal, Solana, Envoy, Tilt, SQLx, PostgreSQL, Redis, AWS, ECS, OpenTelemetry]
     achievements:
-      - Architected a 12+ service Rust/Tonic gRPC platform fronted by Envoy and orchestrated via Tilt so Solana treasury workflows, Temporal jobs, and relayer workers run from a single repo-driven stack.
-      - Safeguarded $2B of $7B USDC deposits while shipping every surface—multi-sig/member management, passkey auth, intents/approvals, inflow/outflow reporting, KYC bridge, webhooks, SSE streaming—and shared crates for logging, Solana/Jito utilities, AWS SSM/SES/S3, Redis, and SQLx migrations.
-  - title: Senior Software Engineer
+      - Architected a 12+ service Rust/Tonic platform fronted by Envoy and orchestrated via Tilt, unifying Solana treasury workflows, Temporal jobs, and relayer workers into a single repo-driven stack.
+      - Safeguarded $2B of $7B USDC deposits while shipping critical surfaces including multi-sig/member management, passkey auth, intents/approvals, inflow/outflow reporting, and KYC bridge.
+      - Developed shared crates for logging, Solana/Jito utilities, AWS SSM/SES/S3, Redis, and SQLx migrations to standardize infrastructure across the platform.
+  - title: Lead Software Engineer
     company: Fractal
     industry: web3 gaming
     funding_stage: "$35M seed"
     start_date: 2022-05
-    end_date: 2023-07
+    end_date: 2023-05
     technologies: [Golang, Web3, Ethereum, Polygon, GCP, Spanner, Microservices]
     achievements:
-      - Launched marketplace, wallet, and SDK suites across Ethereum and Polygon in under four months by owning microservice design end to end.
-      - Operated Golang services on GCP sustaining 1000+ QPS and iterated with design and top studios to double SDK adoption.
+      - Launched marketplace, wallet, and SDK suites across Ethereum and Polygon in under four months by owning microservice design end-to-end.
+      - Operated Golang services on GCP sustaining 1000+ QPS, ensuring high availability and low latency for gaming workloads.
+      - Iterated with design and top studios to double SDK adoption through developer-focused improvements.
   - title: Lead Software Engineer
     company: Fast
     industry: e-commerce
@@ -33,7 +35,8 @@ work_experience:
     end_date: 2022-05
     technologies: [Golang, AWS, Step Functions, DynamoDB, Checkout, Fraud Prevention]
     achievements:
-      - Led a five-engineer fraud pod and architected a Step Functions/DynamoDB checkout that processed $100M+ in sales with idempotent payments and real-time decisioning.
+      - Led a five-engineer fraud pod and architected a Step Functions/DynamoDB checkout that processed $100M+ in sales.
+      - Implemented idempotent payments and real-time decisioning to prevent fraud while maintaining a seamless user experience.
   - title: Software Engineer
     company: Pendo
     industry: analytics
@@ -42,28 +45,24 @@ work_experience:
     end_date: 2021-05
     technologies: [Golang, GCP, Product Analytics, Walkthroughs, Internationalization, OAuth]
     achievements:
-      - Delivered walkthrough, internationalization, and OAuth features plus coordinated onboarding across products to unlock enterprise deployments.
+      - Delivered walkthrough, internationalization, and OAuth features.
+      - Coordinated onboarding across products to unlock enterprise deployments.
 education:
   - institution: Georgia Institute of Technology
     location: Atlanta, Georgia
     degree: Master of Science
     field: Computer Science
+    completion_date: 2020-12
   - institution: North Carolina State University
     location: Raleigh, North Carolina
-    degree: Bachelor of Science
-    field: Computer Science
-  - institution: North Carolina State University
-    location: Raleigh, North Carolina
-    degree: Bachelor of Arts
-    field: Physics
+    degree: "B.S. & B.A."
+    field: "Computer Science & Physics"
+    completion_date: 2018-05
 skills:
-  languages: ["Golang (7 yrs)", "Rust (2 yrs)", Python]
-  backend: [Tonic gRPC, Protocol Buffers, SQLx, Temporal workflows, Microservices]
-  cloud: [AWS, GCP]
-  infrastructure: [Terraform, CI/CD, Envoy, Tilt, Docker Compose, ECS, OpenTelemetry]
-  data_platforms: [PostgreSQL, Redis]
-  integrations: [Solana SDK, AWS SSM Parameter Store, AWS SES, AWS S3, Redis/SSE streaming]
-  specialties: [Distributed systems, Payments, Treasury Platforms, Developer Platforms]
+  languages_backend: ["Golang (7 yrs)", "Rust (2 yrs)", Python, "Tonic gRPC", "Protocol Buffers", SQLx, Temporal, Microservices]
+  infrastructure_cloud: [AWS, GCP, Terraform, CI/CD, Envoy, Tilt, Docker Compose, ECS, OpenTelemetry]
+  data_integrations: [PostgreSQL, Redis, Solana SDK, "AWS SSM/SES/S3", "Redis/SSE streaming"]
+
 academic_experience:
   - advisor: Dr. Keith Weninger
     focus: Single molecule fluorescence methods
