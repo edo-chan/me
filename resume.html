@@ -39,48 +39,46 @@
         <article class="space-y-0.5">
           <div class="flex flex-wrap items-start justify-between gap-y-0.5 text-[15px] text-slate-600">
             <div>
-              <p class="font-semibold text-slate-900">Founding Engineer · Squads</p>
-              <p class="uppercase tracking-wide text-[11px] text-slate-500">web3 treasury automation • VC-backed</p>
+              <p class="font-semibold text-slate-900">Lead Software Engineer · Squads</p>
             </div>
-            <p class="text-[11px] font-semibold text-slate-500">May 2024 – Present</p>
+            <p class="text-[11px] font-semibold text-slate-500">May 2024 – Dec 2025</p>
           </div>
           <p class="text-[11px] uppercase tracking-wide text-slate-500">Stack: <span
               class="normal-case text-slate-600">Rust, Tonic gRPC, Temporal, Solana, Envoy, Tilt, SQLx, PostgreSQL,
               Redis, AWS, ECS, OpenTelemetry</span></p>
           <ul class="list-disc pl-4 text-[13px] leading-normal text-slate-700">
-            <li>Architected a 12+ service Rust/Tonic platform fronted by Envoy and orchestrated via Tilt, unifying
-              Solana treasury workflows, Temporal jobs, and relayer workers into a single repo-driven stack.</li>
-            <li>Safeguarded $2B of $7B USDC deposits while shipping critical surfaces including multi-sig/member
-              management, passkey auth, intents/approvals, inflow/outflow reporting, and KYC bridge.</li>
-            <li>Developed shared crates for logging, Solana/Jito utilities, AWS SSM/SES/S3, Redis, and SQLx migrations
-              to standardize infrastructure across the platform.</li>
+            <li>Built a Temporal-powered, event driven pipeline with idempotent processing, safe replays/backfills, and
+              schema versioning.</li>
+            <li>Reduced internal propagation latency from ~200ms to ~40ms while supporting peak 5,000
+              transactions per second during migrations and catch-up.</li>
+            <li>Led a DigitalOcean to AWS migration; standardized ECS deployments and added OpenTelemetry tracing for
+              observability and reliability.</li>
           </ul>
         </article>
 
         <article class="space-y-0.5">
           <div class="flex flex-wrap items-start justify-between gap-y-0.5 text-[15px] text-slate-600">
             <div>
-              <p class="font-semibold text-slate-900">Lead Software Engineer · Fractal</p>
-              <p class="uppercase tracking-wide text-[11px] text-slate-500">web3 gaming • $35M seed</p>
+              <p class="font-semibold text-slate-900">Senior Software Engineer · Fractal</p>
             </div>
             <p class="text-[11px] font-semibold text-slate-500">May 2022 – May 2023</p>
           </div>
           <p class="text-[11px] uppercase tracking-wide text-slate-500">Stack: <span
               class="normal-case text-slate-600">Golang, Web3, Ethereum, Polygon, GCP, Spanner, Microservices</span></p>
           <ul class="list-disc pl-4 text-[13px] leading-normal text-slate-700">
-            <li>Launched marketplace, wallet, and SDK suites across Ethereum and Polygon in under four months by owning
-              microservice design end-to-end.</li>
-            <li>Operated Golang services on GCP sustaining 1000+ QPS, ensuring high availability and low latency for
-              gaming workloads.</li>
-            <li>Iterated with design and top studios to double SDK adoption through developer-focused improvements.</li>
+            <li>Optimized transaction submission/confirmation with better concurrency, retries, and timeouts; improved
+              transaction processing time from ~1.5s to ~1.0s.</li>
+            <li>Designed a chain agnostic execution layer with adapters, order lifecycle state machine, and two-stage
+              signing.</li>
+            <li>Delivered consistent buy, sell, and partial fill flows with reliable transaction processing and safe
+              retries.</li>
           </ul>
         </article>
 
         <article class="space-y-0.5">
           <div class="flex flex-wrap items-start justify-between gap-y-0.5 text-[15px] text-slate-600">
             <div>
-              <p class="font-semibold text-slate-900">Lead Software Engineer · Fast</p>
-              <p class="uppercase tracking-wide text-[11px] text-slate-500">e-commerce • $125M Series B</p>
+              <p class="font-semibold text-slate-900">Lead Software Engineer · Fast (acquired by Affirm)</p>
             </div>
             <p class="text-[11px] font-semibold text-slate-500">May 2021 – May 2022</p>
           </div>
@@ -88,10 +86,10 @@
               class="normal-case text-slate-600">Golang, AWS, Step Functions, DynamoDB, Checkout, Fraud
               Prevention</span></p>
           <ul class="list-disc pl-4 text-[13px] leading-normal text-slate-700">
-            <li>Led a five-engineer fraud pod and architected a Step Functions/DynamoDB checkout that processed $100M+
-              in sales.</li>
-            <li>Implemented idempotent payments and real-time decisioning to prevent fraud while maintaining a seamless
-              user experience.</li>
+            <li>Led a five-engineer fraud pod and architected a Step Functions/DynamoDB payments checkout that
+              processed $1B+ in GMV.</li>
+            <li>Implemented idempotent payments and real-time decisioning to prevent payment fraud while maintaining a
+              seamless user experience.</li>
           </ul>
         </article>
 
@@ -99,7 +97,6 @@
           <div class="flex flex-wrap items-start justify-between gap-y-0.5 text-[15px] text-slate-600">
             <div>
               <p class="font-semibold text-slate-900">Software Engineer · Pendo</p>
-              <p class="uppercase tracking-wide text-[11px] text-slate-500">analytics • $470M secondary</p>
             </div>
             <p class="text-[11px] font-semibold text-slate-500">Aug 2018 – May 2021</p>
           </div>
@@ -107,7 +104,9 @@
               class="normal-case text-slate-600">Golang, GCP, Product Analytics, Walkthroughs, Internationalization,
               OAuth</span></p>
           <ul class="list-disc pl-4 text-[13px] leading-normal text-slate-700">
-            <li>Delivered walkthrough, internationalization, and OAuth features.</li>
+            <li>Built high-volume event ingestion for unstructured data and added metadata parsing to the event
+              pipeline.</li>
+            <li>Delivered internationalized walkthroughs, guides, and onboarding with location-based segmentation.</li>
             <li>Coordinated onboarding across products to unlock enterprise deployments.</li>
           </ul>
         </article>
@@ -118,11 +117,11 @@
       <h2 class="text-[17px] font-semibold tracking-tight text-[#213a7a] uppercase">Skills</h2>
       <div class="text-[13px] text-slate-700 space-y-0.5">
         <p><span class="font-semibold text-slate-900">Languages & Backend:</span> Golang (7 yrs), Rust (2 yrs), Python,
-          Tonic gRPC, Protocol Buffers, SQLx, Temporal, Microservices</p>
-        <p><span class="font-semibold text-slate-900">Infrastructure & Cloud:</span> AWS, GCP, Terraform, CI/CD, Envoy,
-          Tilt, Docker Compose, ECS, OpenTelemetry</p>
+          Tonic gRPC, Protocol Buffers, SQLx, Temporal, Microservices, Distributed Systems, Scalability</p>
+        <p><span class="font-semibold text-slate-900">Infrastructure & Cloud:</span> AWS, GCP, Terraform, CI/CD
+          Pipelines, Envoy, Tilt, Docker Compose, ECS, OpenTelemetry, Observability, Reliability</p>
         <p><span class="font-semibold text-slate-900">Data & Integrations:</span> PostgreSQL, Redis, Solana SDK, AWS
-          SSM/SES/S3, Redis/SSE streaming</p>
+          SSM/SES/S3, Redis/SSE streaming, Event Driven Architecture, Payments</p>
 
       </div>
     </section>
